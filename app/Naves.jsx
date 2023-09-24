@@ -1,10 +1,9 @@
-import React from 'react'
 
 export default function Naves() {
   return (
     <header>
     <nav className="navar">
-        <img src="https://www.designevo.com/res/templates/thumb_small/green-auto-and-car-wash.webp" className="image" alt="" />
+        <img src="https://w7.pngwing.com/pngs/623/837/png-transparent-cart-motor-vehicle-pollution-car-angle-logo-car.png" className="image" alt="" />
         <ul className="ul">
             <li className="li">
                 <a className="a" href="">About</a>

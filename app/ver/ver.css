@@ -1,0 +1,113 @@
+*{
+    overflow: hidden;
+}
+.contenedor{
+    background-color: #0d5aea!important;
+    height: 70vh;
+    
+}
+.imagenes{
+position: absolute;
+width: 40%;
+height: 50vh;
+top: 30%;
+left: 55%;
+
+}
+.numer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.gridd{
+    position: absolute;
+    top: 14%;
+    left: 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 50%;
+    height: 30vh;
+}
+.colum{
+    display: grid;
+
+}
+.aaaa{
+    grid-template-rows: 25% 25% 25% 25%;
+}
+.bbbb{
+    margin-top: 14.5%;
+}
+.filas{
+    display: grid;
+}
+.g{
+    justify-content: center;
+    align-items: center;
+    border: solid #fff 1px;
+}
+.h{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.cliente{
+    color: #fff;
+}
+h3{
+    color: #fff;
+}
+input{
+    position: absolute;
+    width: 100%;
+    height: 23.5%;
+    width: 100%;
+    left: 50%;
+}
+.inputtt{
+    position: absolute;  
+    
+    left: 50%;
+     top: 51%;
+     width: 50%;
+     height: 20%;
+     background-color: transparent;
+    border-bottom: solid red 2px !important;
+    outline: none; 
+    border: 0;
+   
+}
+.inputtt[type="text"]{
+    color: #fff;
+    text-indent: 13%;
+    
+
+    font-size: 20px;
+}
+.inputtt::placeholder{
+    position: absolute;
+    color: #fff;
+    left: 10%;
+    font-size: 20px;
+    bottom: 1%;
+}
+.griddd{
+    position: absolute;
+    display: grid;
+    width: 46%;
+    left: 5%;
+    height: 30vh;
+    bottom: 23%;
+    grid-template-columns: 55% 45%;
+}
+.carlos{
+    position: absolute;
+    background-color: red;
+    width: 40%;
+    height: 40vh;
+}
+#cajas{
+    position: absolute !important;
+    left: 70%;
+
+}

@@ -83,6 +83,78 @@ input[placeholder='Contraseña'] {
     height: 5vh;
     color: aliceblue;
     bottom: 10%;
+   }
+   .registrate{
+    position: absolute;
+    display: none;
+    opacity: 0.6;
+    background-color: black;
+    bottom: 9%;
+    display: flex;
+    border-radius: 10px;
+    height: 71vh;
+    width: 92%;
+   }
    
-
+   .in{
+    position: absolute;
+    background-color: transparent;
+      height: 6vh;
+      width: 76%;
+     border:none;
+     border-bottom:1px solid #fff;
+   }
+   
+   .name{
+    position: absolute;
+    font-size: 20px;
+    width: 22%;
+    top: 7.5%;
+    font-weight: 500;
+    left: 12%;
+    color: #fff;
+   }
+.a{
+    top: 15.5%;
+    left: 12%;
+    
+    opacity: 0.8;
+   }
+   .b{
+    top: 37%;
+    left: 12%;
+   }
+   
+   .apellido{
+    position: absolute;
+    font-size: 20px;
+    top: 29%;
+    left: 12%;
+    color: #fff;
+    font-weight: 500;
+   }
+   .emas{
+   position: absolute;
+    font-weight: 500;
+   font-size: 20px;
+   color: #fff;
+   bottom: 42%;
+   left: 12%;
+   }
+   .c{
+    bottom: 32%;
+    left: 12%;
+   }
+   .contr{
+    position: absolute;
+    bottom: 20%;
+    font-weight: 500;
+    color: #fff;
+    left: 12%;
+   font-size: 20px;
+   }
+   .d{
+    bottom:10%;
+    left: 12%;
+    
    }

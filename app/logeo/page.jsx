@@ -1,18 +1,35 @@
 "use client"
 import  '../page.module.css'
 
+
+
+
 export default function page() {
-  
     
   return (
-    <div className="contenedor">
+
+    <div className="contenedor boton-clic">
+     
+
         <div><h1 className='bienvenido'>Bienvenido!</h1></div>
         <form className='form'>
             <label className='nombre'>Email</label>
            <input type="text"  placeholder='Email' name='email' className='input'/>
          <label   className='nombre dos'>Contraseña</label>
          <input type="text" placeholder='Contraseña' name='contraseña' className='tres'/>
-         <a href="#" className='sino'>Si aun no te has registrado </a>
+         <input type='input' className='sino boton-clic'
+          placeholder='si aun no te reuiat'/>
+         <div className='registrate' id='registrate'>
+          
+          <label className='name'>Nombre</label>
+          <input type="text" className='in a'/>
+          <label className='apellido'>Apellido</label>
+          <input type="text" className='in b'/>
+          <label className='emas'>Email</label>
+          <input type="text" className='in c'/>
+          <label className='contr'>Contraseña</label>
+          <input type="text" className='in d' />
+         </div>
          <input type="submit" className='enviar' value="Enviar"/>
          {/* <input type="hidden" name='_next' value={"http://localhost:3000/"} /> */}
         </form>
