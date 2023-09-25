@@ -28,13 +28,15 @@ export default function page() {
                     </div>
                     </div>
                 <div className="colum bbbb">
-                    <div className="filas h" type="input">
-                        <input type="text" name="" id="" />
+                    <div className="filas h">
+                        <input type="text"className="qq" id="input"  placeholder="Escribe Aqui..." />
                     </div>
                     <div className="filas h">
-                        <input type="text" className="inputtt w" placeholder="Escribe aqui..."/>
+                        <input type="text" className="inputtt w"id="input" placeholder="Escribe aqui..."/>
                     </div>
-                    <div className="filas h"></div>    
+                    <div className="filas h">
+                        <input type="text" className="hh" id="input" placeholder="Escribe Aqui..." />
+                        </div>    
             </div>
             </div>
             <div className="griddd">
@@ -53,16 +55,18 @@ export default function page() {
                     </div>
                     </div>
                 <div className="colum bbbb">
-                    <div className="filas h" type="input">
-                        <input type="text" name="" id="" />
+                    <div className="filas h">
+                   
                     </div>
                     <div className="filas h">
-                        <input type="text" className="inputtt w" placeholder="Escribe aqui..."/>
+                        <input type="text" className="inputtt vv"id="input" placeholder="Escribe aqui..."/>
                     </div>
-                    <div className="cajas">
-                    <App></App>
+                    <div className="fila">
+                        <input type="text" className="pp"id="input" placeholder="Escribe Aqui..."/>
                     </div>
-                    <div className="filas h"></div>    
+                    <div className="filas h">
+                        <input type="text" className="mm"id="input" placeholder="Escribe Aqui..."/>
+                        </div>    
             </div>
 
             </div>

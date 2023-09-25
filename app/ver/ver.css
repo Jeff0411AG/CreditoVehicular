@@ -41,10 +41,11 @@ left: 55%;
 .filas{
     display: grid;
 }
+
 .g{
     justify-content: center;
     align-items: center;
-    border: solid #fff 1px;
+  
 }
 .h{
     display: grid;
@@ -53,6 +54,10 @@ left: 55%;
 }
 .cliente{
     color: #fff;
+    border-bottom: solid #fff 1px;
+}
+.qq{
+    top: 27.5%;
 }
 h3{
     color: #fff;
@@ -63,51 +68,79 @@ input{
     height: 23.5%;
     width: 100%;
     left: 50%;
+    
+    background-color: transparent;
+    border-bottom: solid #fff 2px !important;
+    border: 0;
 }
 .inputtt{
-    position: absolute;  
-    
+    position: absolute;    
     left: 50%;
-     top: 51%;
+     top: 30.3%;
      width: 50%;
      height: 20%;
      background-color: transparent;
-    border-bottom: solid red 2px !important;
+    border-bottom: solid  2px !important;
     outline: none; 
-    border: 0;
-   
+    border: 0;  
 }
-.inputtt[type="text"]{
-    color: #fff;
-    text-indent: 13%;
-    
 
+input[type="text"]{
+    color: #fff;
     font-size: 20px;
+    font-weight: 600;
+    text-indent: 0% ;
+    width: 50%;
 }
-.inputtt::placeholder{
+.qq[type="text"]{
+    font-weight: 600;
+    border: 0;
+}
+
+input::placeholder{
     position: absolute;
     color: #fff;
-    left: 10%;
-    font-size: 20px;
-    bottom: 1%;
+    left: 0%;
+    width: 48%;
+    font-size: 20px; 
+}
+.w::placeholder{
+    width: 95.5%;
+}
+#input{
+    border: 0;
+    outline: none;
 }
 .griddd{
     position: absolute;
     display: grid;
-    width: 46%;
+    width: 50%;
     left: 5%;
     height: 30vh;
     bottom: 23%;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 50% 50%;
 }
 .carlos{
     position: absolute;
-    background-color: red;
     width: 40%;
     height: 40vh;
 }
 #cajas{
     position: absolute !important;
     left: 70%;
-
 }
+.w{
+    top: 55.5%;
+}
+.vv{
+    bottom: 90%;
+    width: 100%;
+}
+.mm{
+    bottom: 24%;
+}
+.pp{
+    bottom: 0.5%;
+}
+
+
