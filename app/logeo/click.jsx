@@ -1,3 +1,4 @@
+import React from "react"
 import "./clickes.css"
 class Click extends React.Component
 {

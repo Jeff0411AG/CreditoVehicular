@@ -1,6 +1,6 @@
 "use client"
 import  '../page.module.css'
-
+import Click from  "./click.jsx"
 
 
 
