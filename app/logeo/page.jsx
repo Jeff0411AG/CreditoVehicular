@@ -12,7 +12,7 @@ export default function page() {
     <form className='form'>
         <label className='nombre'>Email</label>
        <input type="text"  placeholder='Email' name='email' className='input'/>
-     <input type="text" placeholder='Contraseña' name='contraseña' className='tres '/>
+     <input type="text" placeholder='Contraseña' name='contraseña' className='tres'/>
         <Click></Click>
      <input type="submit" className='enviar' value="Enviar"/>
      {/* <input type="hidden" name='_next' value={"http://localhost:3000/"} /> */}
