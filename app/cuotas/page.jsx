@@ -1,5 +1,6 @@
 import Naves from "../Naves"
 import "../vehiculo.css"
+import "./cuotas.css"
 
 export default function ({oferta,fecha,input}) {
   return (
