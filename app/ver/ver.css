@@ -58,6 +58,14 @@ left: 55%;
 }
 .qq{
     top: 27.5%;
+    left: 50%;
+}
+.qq[type="text"]{
+    font-size: 20px;
+    
+}
+.qq::placeholder{
+    font-size: 20px;
 }
 h3{
     color: #fff;
@@ -135,11 +143,15 @@ input::placeholder{
 .vv{
     bottom: 90%;
     width: 100%;
+    
 }
 .mm{
-    bottom: 24%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 .pp{
+
     bottom: 0.5%;
 }
 

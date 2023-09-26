@@ -25,7 +25,8 @@
     
 }
 .nombre{
-  
+    font-size: 20px;
+    font-weight: 700;
     position: absolute;
     color: beige;
       bottom: 70%;
@@ -55,6 +56,9 @@ input[placeholder='Email'] {
     bottom: 25%;
     color:aliceblue;
 }
+.tres::placeholder{
+    color: #fff;
+}
 input[placeholder='Contraseña'] {
     color: aliceblue;
    }
@@ -79,10 +83,18 @@ input[placeholder='Contraseña'] {
    .enviar{
     position: absolute;
     background-color: transparent;
+    font-weight: 700;
+    font-size: 18px;
     width: 17%;
     height: 5vh;
-    color: aliceblue;
+    border-radius: 22px;
+    color: #fff;
     bottom: 10%;
+   }
+   .enviar:hover{
+    background-color: black;
+    opacity: 0.5;
+    cursor: pointer;
    }
    .registrate{
     position: absolute;
@@ -147,14 +159,19 @@ input[placeholder='Contraseña'] {
    }
    .contr{
     position: absolute;
-    bottom: 20%;
-    font-weight: 500;
+    bottom: 39%;
+    font-weight: 700;
+
     color: #fff;
-    left: 12%;
+    left: 5%;
    font-size: 20px;
    }
    .d{
     bottom:10%;
     left: 12%;
     
+   }
+   input{
+    border: 0;
+    outline: 0;
    }

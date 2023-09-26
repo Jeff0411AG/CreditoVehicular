@@ -1,5 +1,6 @@
- import "./ver.css"
+
  import "./page.jsx"
+ import "./ver"
 export default function app() {
   return (
 

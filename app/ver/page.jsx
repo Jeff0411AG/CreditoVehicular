@@ -1,7 +1,6 @@
 import Naves from "../Naves"
 import "../vehiculo.css"
 import "./ver.css"
-import App from "./app.jsx"
 export default function page() {
   return (
     <div>
