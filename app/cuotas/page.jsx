@@ -8,8 +8,8 @@ export default function ({oferta,fecha,input}) {
     <div className="container">
       <div className="col">
         <h2 className="h2">OFERTAS</h2>
-        <label  className="fechad">Dia de pago</label>
-        <input type="date" name=""  className="inputtres" />
+        <label  className="fechad">D</label>
+        <input type="date"  className="inputtres"  />
         <h3 className="h3">Proteccion contra robos</h3>
         <p className="p">Si tu miedo es el robo.Este plan te cubrira ante esta situacion.</p>
         <span className="span">.Seguro de desgravame</span>
