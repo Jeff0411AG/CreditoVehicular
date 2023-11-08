@@ -1,10 +1,11 @@
 import React from "react"
 import "./clickes.css"
-class Click extends React.Component
+
+
+ class Click extends React.Component
 {
     state ={
-        divcontainer:false,
-    
+        divcontainer:false,   
     }
     render()
     {
@@ -13,6 +14,7 @@ class Click extends React.Component
             this.setState({divcontainer :!this.state.divcontainer})
         }
         const x=this.state.divcontainer
+
         return(
             <div>
             <a className="cliques" onClick={Handlechange}>{x?"Cerrar":"SI aun no te has registrado"}</a>
@@ -36,3 +38,5 @@ class Click extends React.Component
 
 }
 export default Click;
+
+

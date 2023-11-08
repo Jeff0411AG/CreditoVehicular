@@ -1,11 +1,11 @@
 import "../vehiculo.css"
 import Naves from "../Naves"
-export default function page() {
+export default function Page({ children, nombre }) {
   return (
     <div>
       <Naves></Naves>
          <section className="secion">
-            <h1 className="h1">Obten tu prestamo al instante!</h1>
+            <h1 className="h1">{nombre}</h1>
             <p className="p">Ingresa tus datos y nos pondremos en contacto con tigo</p>
                <div className="divs">
                 <div className="requisito">
@@ -24,3 +24,7 @@ export default function page() {
     </div>
   )
 }
+
+Page.defaultProps ={
+    nombre : "Obten tu prestamo al instante!"
+};
