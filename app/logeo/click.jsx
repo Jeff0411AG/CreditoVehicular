@@ -20,15 +20,11 @@ import "./clickes.css"
             <a className="cliques" onClick={Handlechange}>{x?"Cerrar":"SI aun no te has registrado"}</a>
             {
                 x &&(<div className="nombresq">
-                       
-                       <input className="innombre input" type="text" placeholder="Nombre..."/>
-                       <input type="text" placeholder="Apellido..." className="input mm"/>
-                     
-                       <input type="text" placeholder="Email..." className="input qq"/>
-                      
+                       <form action="">
+                       <input className="innombre input" type="text" placeholder="Nombre..."/>                      
                        <input type="password" placeholder="Contraseña..." className="input uu"/>
                        <a href="#" className="env">Enviar</a>
-
+                       </form>                        
 
                     </div>)
             }
