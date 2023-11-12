@@ -1,7 +1,7 @@
 import "./cotiza.css"
 import Naves from "../Naves"
 import "../vehiculo.css"
-import Conex from "./conex"
+// import Conex from "./conex"
 
 export default function page({data}) {
   return (
@@ -14,7 +14,7 @@ export default function page({data}) {
           <div className="grid">
             <div className="fila aaa"><h2>Cuota mensual total</h2><span className="sol">$</span></div>
             <div className="fila"></div>
-             <Conex>
+             {/* <Conex>
                   {
                    data.map(({id,nombre})=>{
                     <div key={id}>
@@ -22,7 +22,7 @@ export default function page({data}) {
                     </div>
                    })
                   }
-                  </Conex>
+                  </Conex> */}
             <div className="fila bbb"><h2>Costo efectivo Anual (En base a 360 dias)</h2></div>
             <div className="fila"></div>
           </div>
@@ -38,19 +38,19 @@ export default function page({data}) {
     </div>
   )
 }
-export async function getStaticProp(){
-  try {
-     const res = await fetch("http://localhost:8080/api/v1/clientes");
-     const data = await await res.json()
-     return{
-      props:{data}
-     }
+// export async function getStaticProp(){
+//   try {
+//      const res = await fetch("http://localhost:8080/api/v1/clientes");
+//      const data = await await res.json()
+//      return{
+//       props:{data}
+//      }
      
 
-  } catch (error) {
-    console.log(error)
+//   } catch (error) {
+//     console.log(error)
     
-  }
-}
+//   }
+// }
 
 

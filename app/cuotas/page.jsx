@@ -6,27 +6,27 @@ import "./cuotas.css"
 export default function ({oferta,fecha,input}) {
 
 
-    const [values,setvalues] = useState({
-      moneda:"",
-      plazosGraciaTotal:0,
-      plazoGraciaParcial: 0,
-      ingresoMensual:0,
-      precioVehiculo:0,
-      porcentajeCuotaInicial:0.00,
-      plazo:0,
-      tea:0,
-      cok: 0,
-      seguroVehicularAnual: 0
-    });
+  //   const [values,setvalues] = useState({
+  //     moneda:"",
+  //     plazosGraciaTotal:0,
+  //     plazoGraciaParcial: 0,
+  //     ingresoMensual:0,
+  //     precioVehiculo:0,
+  //     porcentajeCuotaInicial:0.00,
+  //     plazo:0,
+  //     tea:0,
+  //     cok: 0,
+  //     seguroVehicularAnual: 0
+  //   });
     
   
-  const changeinput =(event) =>{
-    const [name,value] = event.target;
-    setvalues({
-      ...values,
-      [name]:value
-    });
-  };
+  // const changeinput =(event) =>{
+  //   const [name,value] = event.target;
+  //   setvalues({
+  //     ...values,
+  //     [name]:value
+  //   });
+  // };
   return (
     <div>
         <Naves></Naves>
