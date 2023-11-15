@@ -3,15 +3,25 @@ import Navez from "../Naves.jsx"
 import "../vehiculo.css"
 import "./cronograma.css"
 
- async function ver(e){
+import React, { useEffect, useState } from 'react'
+//  async function ver(e){
    
-    const res = await fetch("http://localhost:8080/ofertas")
-    const data =await res.json()
-    return data;
+//     const res = await fetch("http://localhost:8080/ofertas")
+//     const data =await res.json()
+//     return data;
 
-}
-export default async function page() {
-    const mostrar = await ver()
+// }
+
+// const fectchPost =async() =>{
+//     return fetch('http://localhost:8080/ofertas')
+//     .then(res=> res.json())
+// }
+export default async function posts() {
+    // const posts = await fectchPost()
+    
+    
+  
+    // const mostrar = await ver()
   return (
     <div>
        <Navez></Navez>
@@ -28,14 +38,14 @@ export default async function page() {
             </div>
             <div className="fila2">
             <div className="colums">
-                {
+                {/* {
                     mostrar.map((mostra)=>{
                         <div key={mostra.id}>
                         <span>{mostra.van}</span>
                         <span>{mostra.tir}</span>
                         </div>
                     })
-                }
+                } */}
             </div>
         
             <div className="colums"></div>
@@ -49,7 +59,15 @@ export default async function page() {
            </div>
         <div className="grid2">
             <div className="filaa">
-                <div className="culumns"><h3>#</h3></div>
+                <div className="culumns"><h3>{
+        posts.slice(0,1).map((post)=>(
+        <article key={post.id}>
+        <h2>{post.cuotaMensual}</h2>
+        <p>{post.plazo}</p>
+        </article>
+         
+        ))
+        }</h3></div>
                 <div className="culumns"><h3>Fecha</h3></div>
                 <div className="culumns"><h3>Saldo</h3></div>
                 <div className="culumns"><h3>Interés</h3></div>
@@ -61,7 +79,7 @@ export default async function page() {
                 <div className="culumns"><h3>Cuota</h3></div>
                 </div>
             <div className="filaa">
-                <div className="culumns"><h3>#</h3></div>
+                <div className="culumns"><h3></h3></div>
                 <div className="culumns">2</div>
                 <div className="culumns">2</div>
                 <div className="culumns">2</div>
@@ -260,3 +278,68 @@ export default async function page() {
     </div>
   )
 }
+
+// import { Filter } from '@mui/icons-material'
+// import styles from './page.module.css'
+
+
+// async function carlos (){
+  
+//   const res = await fetch("http://localhost:8080/ofertas/id?id=2",{
+//     method:"GET",
+//     headers:{
+//       "Content-Type":"application/json"
+//     }
+//   })
+//   const data =await res.json()
+//   return data
+// }
+
+// async function carlo (){
+  
+//   const res = await fetch("http://localhost:8080/ofertas")
+//   const data =await res.json()
+//   for (let i = 0; i < data.length; i++) {
+//     const element =await data[i]
+   
+      
+//       return element.cuotas
+      
+//       // return element.cuotas
+//     }  
+//   return data
+
+//   // Object.entries(data.cuotas)
+// }
+// export default  async function Home() {
+  
+//   const respuesta = await carlo()
+//   const segundo = await carlo()
+  
+
+//   return (
+//     <main className={styles.main}>
+    
+//      { 
+//       respuesta.slice(-1).map((user)=>(
+//         <>
+//         <h1 key={user.idVehiculo}> id:{user.idVehiculo}</h1>
+//         <h1>van :{user.idVehiculo}</h1>
+//         <h1>tir :{ user.tir}</h1>        
+//         <div>
+//           {
+//             segundo.slice(-1).map((ser)=>(
+//               <div >
+//                 <h1 key={ser.numeroCuota}>amortizacion :{ser.amortización}</h1>
+//               </div>
+//             ))
+//           }</div>
+//         </>
+//         ))
+//      }
+//       <div>
+     
+//       </div>
+//     </main>
+//   )
+// }
