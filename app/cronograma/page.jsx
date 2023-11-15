@@ -1,7 +1,17 @@
+"use client"
 import Navez from "../Naves.jsx"
 import "../vehiculo.css"
 import "./cronograma.css"
-export default function page() {
+
+ async function ver(e){
+   
+    const res = await fetch("http://localhost:8080/ofertas")
+    const data =await res.json()
+    return data;
+
+}
+export default async function page() {
+    const mostrar = await ver()
   return (
     <div>
        <Navez></Navez>
@@ -17,7 +27,17 @@ export default function page() {
             <div className="colum"> <h3 className="cuota">Cuota</h3></div>
             </div>
             <div className="fila2">
-            <div className="colums"></div>
+            <div className="colums">
+                {
+                    mostrar.map((mostra)=>{
+                        <div key={mostra.id}>
+                        <span>{mostra.van}</span>
+                        <span>{mostra.tir}</span>
+                        </div>
+                    })
+                }
+            </div>
+        
             <div className="colums"></div>
             <div className="colums"></div>
             <div className="colums"></div>

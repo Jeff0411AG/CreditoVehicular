@@ -1,38 +1,76 @@
-import React from "react"
+"use client"
+import React, { useState } from "react"
 import "./clickes.css"
 
 
- class Click extends React.Component
-{
-    state ={
-        divcontainer:false,   
-    }
-    render()
-    {
-    
-        let Handlechange = () =>{
-            this.setState({divcontainer :!this.state.divcontainer})
-        }
-        const x=this.state.divcontainer
+export default function click({cambia, espera}){
+const onsubmit = async(e)=>{
+    // const router = useRouter()
 
-        return(
-            <div>
-            <a className="cliques" onClick={Handlechange}>{x?"Cerrar":"SI aun no te has registrado"}</a>
-            {
-                x &&(<div className="nombresq">
-                       <form action="http://localhost:8080/usuarios" method="post">
-                       <input className="innombre input" type="text" placeholder="Nombre..."/>                      
-                       <input type="password" placeholder="Contraseña..." className="input uu"/>
-                       <a href="#" className="env">Enviar</a>
-                       </form>    
-                                 
-                    </div>)
-            }
-           </div>
-        )
-    }
+    e.preventDefault()
+    console.log(e)
+    const username = e.target.username.value
+    const password = e.target.password.value
+    console.log(username,password)
+    const res =await fetch("http://localhost:8080/usuarios", {
+      method:"POST",
+      body: JSON.stringify({username,password}),
+      headers:{
+        'Content-Type':'application/json'
+      }
+    })
+    const data =await res.json()
+    console.log(data)
 
+    // router.push("/vehiculo")
+  }
+ 
+return (
+    <>
+    <div className={cambia?"nombresq":null} onClick={espera}>
+        <form onSubmit={onsubmit}>
+    <input className="innombre input" type="text" name="username" placeholder="Nombre..." id="username"/>                      
+    <input type="password" placeholder="Contraseña..." name="password" className="input uu" id="password"/>
+    <button  className="env">Enviar</button>
+    </form>
+    </div>
+    </>                
+    )
 }
-export default Click;
+
+//  class Click extends React.Component   nombresq
+// {
+//     state ={
+//         divcontainer:false,   
+//     }
+//     render()
+//     {
+    
+//         let Handlechange = () =>{
+//             this.setState({divcontainer :!this.state.divcontainer})
+//         }
+//         const x=this.state.divcontainer
+
+//         return(
+//             <div>
+//             <a className="cliques" onClick={Handlechange}>{x?"Cerrar":"SI aun no te has registrado"}</a>
+//             {
+//                 x &&(
+//                       <div className="nombresq">
+//                        <input className="innombre input" type="text" name="username" placeholder="Nombre..."/>                      
+//                        <input type="password" placeholder="Contraseña..." name="password" className="input uu"/>
+//                        <button href="#" className="env">Enviar</button>
+//                        </div>
+                       
+
+                                 
+//                     )
+//             }
+//            </div>
+//         )
+//     }
+
+// }
+// export default Click;
 
 
